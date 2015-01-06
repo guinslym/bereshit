@@ -20,6 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+require 'bereshit'
+```
+
 ####Retrieve a paragraph
 ```ruby
 paragraph = Bereshit.paragraphs
