@@ -73,7 +73,7 @@ module Bereshit
     def initialize(file='')
       self.file = file
       self.lines = []
-        file = File.read(file)
+        file = File.read(File.dirname(__FILE__) << "/"  + file)
         return self.lines = JSON.parse(file)
           #File.open(File.dirname(__FILE__) << '/sermon.txt').each_line do |line|
           puts line
@@ -84,3 +84,8 @@ module Bereshit
 end#module
 
 
+lang = ['english', 'kreyol', 'hebrew']
+3.times do
+#puts BetterLorem.p()
+puts Bereshit.paragraphs(5, false, false, lang.sample)
+end
