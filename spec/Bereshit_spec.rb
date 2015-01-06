@@ -15,7 +15,7 @@ describe Bereshit do
   end
 
   describe ".paragraphs" do
-    lines = Bereshit.paragraphs(3, false, false, 'english')
+    lines = Bereshit.paragraphs(3, false, false, 'hebrew')
 
     it "should return 3 paragraphs" do
       #it will not return an array of 3
@@ -24,6 +24,9 @@ describe Bereshit do
     end
     it 'includes a paragraph tag' do
       expect(lines.include?('<p>')).to be true
+    end
+    it 'includes foreing character code' do 
+      expect(!lines.include?('a')).to be true
     end
   end
 
