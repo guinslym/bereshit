@@ -33,7 +33,7 @@ module Bereshit
     start_inx = rand(loader.lines.count - count)
 
     # Check for overrun
-    raise "I don't know that many words. Try a smaller value." if (start_inx + count) > loader.lines.count
+    raise "I can't retrieve that many paragraphs. Try a smaller value." if (start_inx + count) > loader.lines.count
 
     # Build paragraphs from array
     paragraphs = loader.lines[start_inx, count]
