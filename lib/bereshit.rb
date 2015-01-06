@@ -10,6 +10,7 @@ module Bereshit
 
   # Return a sermon
   def self.sermon(locale='english')
+    #sermons scrappe from http://www.sermonnotebook.org/otsermons.htm
 
     #if you have a typo in the locale name THAN thre program will fallback to english
     locale = LOCALE.include?(locale) ? locale : 'english'

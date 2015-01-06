@@ -28,8 +28,6 @@ describe Bereshit do
     it 'hebrew language includes foreign character code' do 
       #hebrew not contains the letter 'a'
       expect(!lines.include?('a')).to be true
-      para = Bereshit.sermon
-      puts para
     end
   end
 

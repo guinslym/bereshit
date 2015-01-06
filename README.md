@@ -58,7 +58,8 @@ title = Bereshit.sermon
 title = Bereshit.sermon('kreyol')
 => Bondye kreye moun. Li fè l' pòtre ak li. Li kreye yo gason ak fi
 ```
-in this version all the 'sermon' are in english... but feel free to fork and translate and add sermons
+In this version all the 'sermon' are in english... but feel free to fork, translate and add sermons.
+And the sermon are related to ALL the chapter of the book of Genesis so not only the first chapter.
 
 ####Locale
 
@@ -70,6 +71,7 @@ This is the locale available
 
 ##todo
 add other locale :)
+add sermon ...
 
 
 ## Contributing
