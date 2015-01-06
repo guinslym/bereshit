@@ -26,7 +26,7 @@ require 'bereshit'
 
 ####Retrieve a paragraph
 ```ruby
-paragraph = Bereshit.paragraphs
+paragraph = Bereshit.paragraphs(1)
 #or detailed
 paragraph = Bereshit.paragraphs(1, false, false, 'hebrew')
 puts paragraph
