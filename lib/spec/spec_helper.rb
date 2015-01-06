@@ -1,4 +1,4 @@
-require 'ui_faces'
+require 'bereshit'
 
 RSpec.configure do |config|
   # Use color in STDOUT
