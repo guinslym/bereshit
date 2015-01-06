@@ -49,7 +49,7 @@ puts Bereshit.paragraphs(1, true, false, 'english')
 
 ```
 
-####retrieve without [the full stop](http://en.wikipedia.org/wiki/Full_stop) (.)
+####retrieve a paragraph without [the full stop](http://en.wikipedia.org/wiki/Full_stop) (.)
 ```ruby
 puts Bereshit.paragraphs(1, true, true, 'kreyol')
 => Bondye kreye moun. Li fè l' pòtre ak li. Li kreye yo gason ak fi
