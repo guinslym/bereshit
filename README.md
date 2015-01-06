@@ -88,6 +88,7 @@ add sermon ...
 ## Contributing
 
 [![guinslym](https://s3.amazonaws.com/uifaces/faces/twitter/guinslym/73.jpg)](http://uifaces.com/guinslym)
+
 1. Star it :)
 2. Fork it ( https://github.com/guinslym/bereshit/fork )
 3. Create your feature branch (`git checkout -b my-new-feature`)
