@@ -26,8 +26,6 @@ require 'bereshit'
 
 ####Retrieve a paragraph
 ```ruby
-paragraph = Bereshit.paragraphs(1)
-#or detailed
 paragraph = Bereshit.paragraphs(1, false, false, 'hebrew')
 puts paragraph
 => <p>בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ:</p>
@@ -67,14 +65,14 @@ Bereshit.paragraphs #with all the parameters
 title = Bereshit.sermon
 #or
 puts title = Bereshit.sermon('kreyol')
-=> Bondye kreye moun. Li fè l' pòtre ak li. Li kreye yo gason ak fi
+=> Getting Back To Bethel
 ```
 In this version all the 'sermon' are in english... but feel free to fork, translate and add sermons.
 And the sermon are related to ALL the chapter of the book of Genesis so not only the first chapter.
 
 ####Locale
 
-3 available locale **'hebrew'**, **'english'** and **'kreyol'** => that stands for [Haitian kreyol](http://en.wikipedia.org/wiki/Haitian_Creole) 
+3 available locales **'hebrew'**, **'english'** and **'kreyol'** => that stands for [Haitian kreyol](http://en.wikipedia.org/wiki/Haitian_Creole) 
 
 
 ##todo
