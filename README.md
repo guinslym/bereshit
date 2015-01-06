@@ -74,7 +74,7 @@ And the sermon are related to ALL the chapter of the book of Genesis so not only
 
 ####Locale
 
-3 available locale **'hebrew'**, **'kreyol'** => stands for [Haitian kreyol](http://en.wikipedia.org/wiki/Haitian_Creole) and **'english'**
+3 available locale **'hebrew'**, **'english'** and **'kreyol'** => that stands for [Haitian kreyol](http://en.wikipedia.org/wiki/Haitian_Creole) 
 
 
 ##todo
