@@ -53,9 +53,9 @@ puts Bereshit.paragraphs(1, true, true, 'kreyol')
 
 ####shortcut
 ```ruby
-Bareshit.p
+Bareshit.p  #with all the parameters
 #is equal to 
-Bereshit.paragraphs
+Bereshit.paragraphs #with all the parameters
 ```
 
 ####retrieve a sermon 
@@ -77,7 +77,7 @@ Available locale
 
 
 ##todo
-add other locale :)
+add other locales :)
 add sermon ...
 
 
