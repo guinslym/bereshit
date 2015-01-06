@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["agmond@gmx.com.br"]
   spec.summary       = %q{Bereshit mean 'in the beginning...' in hebrew. This gems is a lorem ipsum based on Genesis 1:1 -- the first Chapter of the book of Genesis (Torah/Bible)}
   spec.description   = %q{Bereshit mean 'in the beginning...' in hebrew. This gems is a lorem ipsum based on Genesis 1:1 -- the first Chapter of the book of Genesis (Torah/Bible)}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/guinslym/bereshit"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
