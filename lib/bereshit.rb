@@ -84,8 +84,3 @@ module Bereshit
 end#module
 
 
-lang = ['english', 'kreyol', 'hebrew']
-3.times do
-#puts BetterLorem.p()
-puts Bereshit.paragraphs(5, false, false, lang.sample)
-end

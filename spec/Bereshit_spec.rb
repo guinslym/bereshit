@@ -4,19 +4,22 @@ describe Bereshit do
 
   # Crappy specs start here
   describe ".sermon" do
+    sermon = Bereshit.sermon('hebrew')
+
     it "should return a string" do
-      sermon = Bereshit.sermon('hebrew')
       expect(sermon).to be_a String
-      expect(sermon.length > 5).to be_true
+    end
+    it 'expect sermon title.size to be greater than 2' do
+      expect(sermon.size).to be > 2
     end
   end
 
   describe ".paragraphs" do
     it "should return 3 paragraphs" do
       lines = Bereshit.paragraphs(3, false, false, 'english')
-      puts "PARAG |#{lines}|"
-      lines.should_not == ""
+      expect(lines.size).to be > 2
     end
   end
+
 
 end
