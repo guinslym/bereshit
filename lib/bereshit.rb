@@ -53,6 +53,10 @@ module Bereshit
     paragraphs.join('')
   end
 
+  def self.p(count = 5, plainText = false, exclude_trailing_period = false, locale="english")
+    self.paragraphs(count, plainText, exclude_trailing_period, locale)
+  end
+
   private
 
 

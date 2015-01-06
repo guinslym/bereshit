@@ -22,6 +22,8 @@ Or install it yourself as:
 
 ####Retrieve a paragraph
 ```ruby
+paragraph = Bereshit.paragraphs
+#or detailed
 paragraph = Bereshit.paragraphs(1, false, false, 'hebrew')
 puts paragraph
 => <p>בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ:</p>
@@ -30,32 +32,37 @@ puts paragraph
 
 ####retrieve 3 paragraphs
 ```ruby
-paragraphs = Bereshit.paragraphs(3, false, false, 'with_typo_fallback_to_english')
+puts paragraphs = Bereshit.paragraphs(3, false, false, 'with_typo_fallback_to_english')
 => <p>And God made the beasts of the earth according to their kind and the cattle according to their kind, and all the creeping things of the ground according to their kind, and God saw that it was good.</p><p>And God said, "Let us make man in our image, after our likeness, and they shall rule over the fish of the sea and over the fowl of the heaven and over the animals and over all the earth and over all the creeping things that creep upon the earth."</p><p>And God created man in His image; in the image of God He created him; male and female He created them.</p>
 #this was a String not an Array of 3 paragraph strings
 
 ```
 
-####retrieve without the `<p>` tag
+####retrieve a paragraph without the `<p>` tag
 ```ruby
-Bereshit.paragraphs(1, true, false, 'english')
+puts Bereshit.paragraphs(1, true, false, 'english')
 => And God said, "Let the earth sprout vegetation, seed yielding herbs and fruit trees producing fruit according to its kind in which its seed is found, on the earth," and it was so.
 
 ```
 
 ####retrieve without [the full stop](http://en.wikipedia.org/wiki/Full_stop) (.)
 ```ruby
-Bereshit.paragraphs(1, true, true, 'kreyol')
+puts Bereshit.paragraphs(1, true, true, 'kreyol')
 => Bondye kreye moun. Li fè l' pòtre ak li. Li kreye yo gason ak fi
+```
 
-
+####shortcut
+```ruby
+Bareshit.p
+#is equal to 
+Bereshit.paragraphs
 ```
 
 ####retrieve a sermon 
 ```ruby
 title = Bereshit.sermon
 #or
-title = Bereshit.sermon('kreyol')
+puts title = Bereshit.sermon('kreyol')
 => Bondye kreye moun. Li fè l' pòtre ak li. Li kreye yo gason ak fi
 ```
 In this version all the 'sermon' are in english... but feel free to fork, translate and add sermons.
@@ -63,7 +70,7 @@ And the sermon are related to ALL the chapter of the book of Genesis so not only
 
 ####Locale
 
-This is the locale available
+Available locale
 'hebrew'
 'kreyol' stands for [Haitian kreyol](http://en.wikipedia.org/wiki/Haitian_Creole)
 'english'

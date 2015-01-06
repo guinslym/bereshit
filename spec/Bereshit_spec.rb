@@ -29,6 +29,11 @@ describe Bereshit do
       #hebrew not contains the letter 'a'
       expect(!lines.include?('a')).to be true
     end
+    it '.p should return 3 paragraphs' do 
+      #alias of self.paragraphs()
+      lines = Bereshit.p(3, false, false, 'hebrew')
+      expect(lines.split('<p>').size).to be >= 4
+    end
   end
 
 
