@@ -25,7 +25,8 @@ describe Bereshit do
     it 'includes a paragraph tag' do
       expect(lines.include?('<p>')).to be true
     end
-    it 'includes foreing character code' do 
+    it 'hebrew language includes foreign character code' do 
+      #hebrew not contains the letter 'a'
       expect(!lines.include?('a')).to be true
     end
   end
